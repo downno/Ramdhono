@@ -14,14 +14,14 @@ const TopicList = () => {
     setTopic(response.data);
   };
 
-  const deleteTopic = async (id) => {
-    try {
-      await axios.delete(`http://localhost:5000/topics/${id}`);
-      getTopics();
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const deleteTopic = async (id) => {
+  //   try {
+  //     await axios.delete(`http://localhost:5000/topics/${id}`);
+  //     getTopics();
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
   return (
     <div className="columns mt-5 is-centered">
@@ -49,7 +49,7 @@ const TopicList = () => {
                 <td>{topic.nohp}</td>
                 <td>{topic.topic}</td>
                <td>
-             <button onClick={() => deleteTopic(topic.id)} className="button is-small is-danger">Proses</button>
+             <button>Proses</button>
                 </td>
                 <td></td>
               </tr>
