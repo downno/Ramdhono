@@ -1,0 +1,31 @@
+GET http://localhost:5000/topics
+
+###
+GET http://localhost:5000/topics/1
+
+###
+POST http://localhost:5000/topics
+Content-Type: application/json
+
+{
+    "name": "Hendra",
+    "email": "hendra@usnri.ac.id",
+    "nim": "080522",
+    "nohp" :"0585233355",
+    "topic" : "reset password"
+}
+
+###
+PATCH http://localhost:5000/topics/1
+Content-Type: application/json
+
+{
+    "name": "Hendra update",
+    "email": "hendra@usnri.ac.id",
+    "nim": "080522",
+    "nohp" :"0585233355",
+    "topic" : "reset password"
+}
+
+###
+DELETE http://localhost:5000/topics/7
