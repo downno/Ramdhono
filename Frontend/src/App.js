@@ -14,8 +14,9 @@ function App() {
       <Routes>
         <Route element={<PrivateRoutes/>}>
          <Route path="edit/:id" element={<EditUser/>}/>
+           <Route path="/topic" element={<TopicList/>}/>
         </Route>
-        <Route path="/topic" element={<TopicList/>}/>
+        
        
         <Route path="/" element={<Welcome/>}/>
         <Route path="/add" element={<AddTopic/>}/>
